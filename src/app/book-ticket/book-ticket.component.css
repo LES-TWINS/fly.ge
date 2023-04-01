@@ -1,9 +1,11 @@
 .ticket_box {
+  display: flex;
   width: 785px;
   height: 545px;
   background-color: #fff;
   border-radius: 8px;
   margin: 150px 0px;
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1607843137);
 }
 .ticket_box__main_info {
   width: 531px;
@@ -48,7 +50,7 @@
 .ticket_box__time {
   display: flex;
   align-items: baseline;
-  gap: 85px;
+  gap: 80px;
 }
 .ticket_box__airplane_img {
   position: relative;
@@ -76,6 +78,12 @@
   position: relative;
   bottom: 2px;
 }
+.ticket_box__line--active {
+  width: 18px;
+}
+.ticket_box__line--active2 {
+  width: 25px;
+}
 .ticket_box__full_details {
   display: flex;
   color: #8E96A5;
@@ -85,15 +93,15 @@
 }
 .ticket_box__full_details p:nth-child(2) {
   position: relative;
-  left: 33px;
+  left: 29px;
 }
 .ticket_box__full_details p:nth-child(3) {
   position: relative;
-  left: 53px;
+  left: 50px;
 }
 .ticket_box__full_details p:nth-child(4) {
   position: relative;
-  left: 56px;
+  left: 47px;
 }
 .ticket_box__flight_time {
   margin-top: 18px;
@@ -112,4 +120,26 @@
   position: relative;
   top: 3px;
   right: 7px;
+}
+.ticket_box__date:nth-child(2) {
+  margin-top: 50px;
+}
+.ticket_box__package {
+  display: flex;
+  margin-top: 85px;
+  margin-left: 29px;
+  gap: 8px;
+}
+.ticket_box__package button {
+  padding: 5px 10px;
+  border-radius: 34px;
+  border: 1px solid #C8D2DC;
+  color: #616C81;
+  background-color: transparent;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+.ticket_box__payment {
+  border: 1px dashed #C7C7C7;
 }

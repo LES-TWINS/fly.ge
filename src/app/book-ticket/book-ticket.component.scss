@@ -1,9 +1,11 @@
 .ticket_box{
+    display: flex;
     width: 785px;
     height: 545px;
     background-color: #fff;
     border-radius: 8px;
     margin: 150px 0px;
+    box-shadow: 0px 4px 32px 0px #00000029;
     
     &__main_info{
         width: 531px;
@@ -55,7 +57,7 @@
   &__time{
     display: flex;
     align-items: baseline;
-    gap: 85px;
+    gap: 80px;
   }
   &__airplane_img{
     position: relative;
@@ -83,6 +85,12 @@
     background-color: #C2DAF9;
     position: relative;
     bottom: 2px;
+    &--active{
+        width: 18px;
+    }
+    &--active2{
+        width: 25px;
+    }
   }
 
   &__full_details{
@@ -93,15 +101,15 @@
     margin-top: 5px;
     & p:nth-child(2){
       position: relative;
-      left: 33px;
+      left: 29px;
     }
     & p:nth-child(3){
         position: relative;
-        left: 53px;
+        left: 50px;
       }
     & p:nth-child(4){
         position: relative;
-        left: 56px;
+        left: 47px;
     }
   }
 
@@ -125,5 +133,30 @@
     position: relative;
     top: 3px;
     right: 7px;
+  }
+
+  &__date:nth-child(2){
+    margin-top: 50px;
+  }
+  &__package{
+   display: flex;
+   margin-top: 85px;
+   margin-left: 29px;
+   gap: 8px;
+    button{
+    padding: 5px 10px;
+    border-radius: 34px;
+    border: 1px solid #C8D2DC;
+    color: #616C81;
+    background-color: transparent;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: 'Noto Sans Georgian', sans-serif;
+
+   }
+  }
+
+  &__payment{
+    border: 1px dashed #C7C7C7;
   }
 }

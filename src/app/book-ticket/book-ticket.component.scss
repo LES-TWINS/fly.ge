@@ -1,0 +1,129 @@
+.ticket_box{
+    width: 785px;
+    height: 545px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 150px 0px;
+    
+    &__main_info{
+        width: 531px;
+    }
+
+    &__date{
+        position: relative;
+        top: 32px;
+        left: 29px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__details{
+        display: flex;
+        gap: 7px;
+    }
+    &__more_details{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 12px;
+   
+    }
+    &__text{
+        color: #8E96A5;
+       }
+    &__img{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+    &__quantity{
+        width: 32px;
+        height: 24px;
+        border-radius: 40px;
+        font-size: 14px;
+        background-color: #F4F6F8;
+        padding: 4px 7px;
+      
+}
+
+  &__all_info{
+    margin-top: 20px;
+  }
+
+
+  &__time{
+    display: flex;
+    align-items: baseline;
+    gap: 85px;
+  }
+  &__airplane_img{
+    position: relative;
+    left: 10px;
+    img{
+        width: 26px;
+        height: 20px;
+    }
+  }
+  &__diagram{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+  }
+  &__circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #1A73E7;
+  
+  }
+  &__line{
+    width: 58px;
+    height: 3px;
+    background-color: #C2DAF9;
+    position: relative;
+    bottom: 2px;
+  }
+
+  &__full_details{
+    display: flex;
+    color: #8E96A5;
+    font-size: 12px;
+    gap: 32px;
+    margin-top: 5px;
+    & p:nth-child(2){
+      position: relative;
+      left: 33px;
+    }
+    & p:nth-child(3){
+        position: relative;
+        left: 53px;
+      }
+    & p:nth-child(4){
+        position: relative;
+        left: 56px;
+    }
+  }
+
+
+  &__flight_time{
+    margin-top: 18px;
+  }
+
+  &__button{
+    text-decoration: none;
+    border: 1px solid #C8D2DC;
+    border-radius: 35px;
+    padding: 4px 12px;
+    font-size: 13px;
+    color: #3C3F49;
+  }
+
+  &__clock_img{
+    width: 17.5px;
+    height: 15px;
+    position: relative;
+    top: 3px;
+    right: 7px;
+  }
+}

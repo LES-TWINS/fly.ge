@@ -1,0 +1,115 @@
+.ticket_box {
+  width: 785px;
+  height: 545px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 150px 0px;
+}
+.ticket_box__main_info {
+  width: 531px;
+}
+.ticket_box__date {
+  position: relative;
+  top: 32px;
+  left: 29px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ticket_box__details {
+  display: flex;
+  gap: 7px;
+}
+.ticket_box__more_details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+}
+.ticket_box__text {
+  color: #8E96A5;
+}
+.ticket_box__img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.ticket_box__quantity {
+  width: 32px;
+  height: 24px;
+  border-radius: 40px;
+  font-size: 14px;
+  background-color: #F4F6F8;
+  padding: 4px 7px;
+}
+.ticket_box__all_info {
+  margin-top: 20px;
+}
+.ticket_box__time {
+  display: flex;
+  align-items: baseline;
+  gap: 85px;
+}
+.ticket_box__airplane_img {
+  position: relative;
+  left: 10px;
+}
+.ticket_box__airplane_img img {
+  width: 26px;
+  height: 20px;
+}
+.ticket_box__diagram {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.ticket_box__circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #1A73E7;
+}
+.ticket_box__line {
+  width: 58px;
+  height: 3px;
+  background-color: #C2DAF9;
+  position: relative;
+  bottom: 2px;
+}
+.ticket_box__full_details {
+  display: flex;
+  color: #8E96A5;
+  font-size: 12px;
+  gap: 32px;
+  margin-top: 5px;
+}
+.ticket_box__full_details p:nth-child(2) {
+  position: relative;
+  left: 33px;
+}
+.ticket_box__full_details p:nth-child(3) {
+  position: relative;
+  left: 53px;
+}
+.ticket_box__full_details p:nth-child(4) {
+  position: relative;
+  left: 56px;
+}
+.ticket_box__flight_time {
+  margin-top: 18px;
+}
+.ticket_box__button {
+  text-decoration: none;
+  border: 1px solid #C8D2DC;
+  border-radius: 35px;
+  padding: 4px 12px;
+  font-size: 13px;
+  color: #3C3F49;
+}
+.ticket_box__clock_img {
+  width: 17.5px;
+  height: 15px;
+  position: relative;
+  top: 3px;
+  right: 7px;
+}

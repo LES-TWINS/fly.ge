@@ -29,6 +29,12 @@ button {
   display: flex;
   gap: 7px;
 }
+.ticket_box__details img {
+  display: none;
+}
+.ticket_box__details h4:nth-child(3), .ticket_box__details h4:nth-child(5) {
+  display: none;
+}
 .ticket_box__more_details {
   display: flex;
   align-items: center;
@@ -212,6 +218,45 @@ button {
     max-height: 330px;
     box-shadow: none;
   }
+  .ticket_box__details {
+    align-items: center;
+    margin-left: 10px;
+    gap: 15px;
+  }
+  .ticket_box__details img {
+    display: block;
+    width: 18px;
+    height: 14px;
+  }
+  .ticket_box__details h4:nth-child(3), .ticket_box__details h4:nth-child(5) {
+    display: block;
+    font-size: 18px;
+    color: #3C3F49;
+  }
+  .ticket_box__details h4:nth-child(1), .ticket_box__details h4:nth-child(2) {
+    display: none;
+  }
+  .ticket_box__line {
+    height: 2px;
+  }
+  .ticket_box__circle:nth-child(4) {
+    position: relative;
+    top: 5px;
+    margin: 0 2px 0 12px;
+    width: 5px;
+    height: 5px;
+  }
+  .ticket_box__airplane_img {
+    left: 100px;
+    top: 6px;
+  }
+  .ticket_box__airplane_img img {
+    width: 22px;
+    height: 17px;
+  }
+  .ticket_box__date {
+    left: 0;
+  }
   .ticket_box__date:nth-child(2) {
     display: none;
   }
@@ -219,14 +264,35 @@ button {
     height: 50%;
     max-width: 330px;
   }
+  .ticket_box__full_details {
+    justify-content: space-between;
+    width: 312px;
+    margin: 5px auto;
+  }
   .ticket_box__full_details p:nth-child(1), .ticket_box__full_details p:nth-child(3) {
     display: none;
+  }
+  .ticket_box__full_details p:nth-child(4), .ticket_box__full_details p:nth-child(2) {
+    left: 0;
+    font-size: 13px;
+    color: #B2C0CE;
+  }
+  .ticket_box__full_details p span {
+    display: none;
+  }
+  .ticket_box__full_details p:nth-child(4)::after {
+    content: "ფრენა: 5სთ 20";
   }
   .ticket_box__flight_time, .ticket_box__package, .ticket_box__more_details {
     display: none;
   }
   .ticket_box__time {
+    justify-content: space-evenly;
     gap: 0;
+  }
+  .ticket_box__time h4 {
+    font-size: 20px;
+    color: #616C81;
   }
   .ticket_box__payment {
     width: 100%;

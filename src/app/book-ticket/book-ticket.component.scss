@@ -11,11 +11,9 @@ button{
     border-radius: 8px;
     margin: 150px 0px;
     box-shadow: 0px 4px 32px 0px #00000029;
-    
     &__main_info{
         width: 531px;
     }
-
     &__date{
         position: relative;
         top: 32px;
@@ -24,17 +22,21 @@ button{
         flex-direction: column;
         gap: 5px;
     }
-
     &__details{
         display: flex;
         gap: 7px;
+        img{
+            display: none;
+        }
+        h4:nth-child(3),h4:nth-child(5){
+            display: none;
+        }
     }
     &__more_details{
         display: flex;
         align-items: center;
         gap: 12px;
         font-size: 12px;
-   
     }
     &__text{
         color: #8E96A5;
@@ -51,14 +53,10 @@ button{
         font-size: 14px;
         background-color: #F4F6F8;
         padding: 4px 7px;
-      
 }
-
   &__all_info{
     margin-top: 20px;
   }
-
-
   &__time{
     display: flex;
     align-items: baseline;
@@ -82,7 +80,6 @@ button{
     height: 7px;
     border-radius: 50%;
     background-color: #1A73E7;
-  
   }
   &__line{
     width: 58px;
@@ -97,7 +94,6 @@ button{
         width: 25px;
     }
   }
-
   &__full_details{
     display: flex;
     color: #8E96A5;
@@ -117,12 +113,9 @@ button{
         left: 47px;
     }
   }
-
-
   &__flight_time{
     margin-top: 18px;
   }
-
   &__button{
     text-decoration: none;
     border: 1px solid #C8D2DC;
@@ -131,7 +124,6 @@ button{
     font-size: 13px;
     color: #3C3F49;
   }
-
   &__clock_img{
     width: 17.5px;
     height: 15px;
@@ -139,7 +131,6 @@ button{
     top: 3px;
     right: 7px;
   }
-
   &__date:nth-child(2){
     margin-top: 50px;
   }
@@ -157,7 +148,6 @@ button{
     font-size: 13px;
    }
   }
-
   &__payment{
     text-align: center;
     display: flex;
@@ -180,7 +170,6 @@ button{
         color: #1A73E7;
         font-size: 12px;
         margin-top: 6px;
-        
     }
     button{
         margin-top: 35px;
@@ -204,7 +193,6 @@ button{
         font-size: 13px;
     }
   }
-
 &__circle_bottom, &__circle_top{
     position: absolute;
     width: 16px;
@@ -219,10 +207,7 @@ button{
   &__circle_bottom{
     top: 537px;
   }
-
 }
-
-
 
 @media screen and (max-width:768px) {
     .ticket_box{
@@ -230,6 +215,46 @@ button{
         max-width: 330px;
         max-height: 330px;
         box-shadow: none;
+        &__details{
+            align-items: center;
+            margin-left: 10px;
+            gap: 15px;
+            img{
+                display: block;
+                width: 18px;
+                height: 14px;
+            }
+            h4:nth-child(3),h4:nth-child(5){
+                display: block;
+                font-size: 18px;
+                color: #3C3F49;
+            }
+            h4:nth-child(1),h4:nth-child(2){
+                display: none;
+            }
+        }
+        &__line{
+            height: 2px;
+        }
+        &__circle:nth-child(4){
+            position: relative;
+            top: 5px;
+            margin: 0 2px 0 12px;
+            width: 5px;
+            height: 5px;
+        }
+        &__airplane_img{
+            left: 100px;
+            top: 6px;
+            img{
+                width: 22px;
+                height: 17px;
+            
+            }
+        }
+        &__date{
+            left: 0;
+        }
         &__date:nth-child(2){
             display: none;
         }
@@ -238,15 +263,36 @@ button{
             max-width: 330px;
         }
         &__full_details{
+            justify-content: space-between;
+            width: 312px;
+            margin: 5px auto;
             p:nth-child(1),& p:nth-child(3){
               display: none;
+            }
+            p:nth-child(4),& p:nth-child(2){
+                left: 0;
+                font-size: 13px;
+                color: #B2C0CE;
+            }
+            p{
+                span{
+                    display: none;
+                }
+            }
+            p:nth-child(4)::after{
+             content: "ფრენა: 5სთ 20";
             }
         }
         &__flight_time, &__package, &__more_details{
             display: none;
         }
         &__time{
+            justify-content: space-evenly;
             gap: 0;
+            h4{
+                font-size: 20px;
+                color: #616C81;
+            }
         }
         &__payment{
             width: 100%;
@@ -269,10 +315,8 @@ button{
             }
             button::after{
                 content: "640₾";
-                
             }
         }
-
         &__see_details{
             bottom: 0;
             top: 12px;
@@ -287,13 +331,11 @@ button{
                     content: "ვრცლად";
                 }
             }
-          
         }
         &__circles{
             div{
                 background-color: #D9D9D9;
             }
-            
         }
         &__circle_bottom{
             top: 48%;
@@ -304,5 +346,4 @@ button{
             right: 98%;
         }
     }
-    
 }
